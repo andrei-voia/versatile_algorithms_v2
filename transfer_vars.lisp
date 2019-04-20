@@ -1,0 +1,7 @@
+(defun transf2 (lista n m)
+    (setq matrice (make-array (list n m)))
+    (do ( ( i 0 (+ i 1) ) (e lista (CDR e) ) )
+        ( (= i (length lista) ) matrice)
+        ( setf (aref matrice (CAAR e) (CADAR e) ) (CADDAR e)   )        
+    )
+)

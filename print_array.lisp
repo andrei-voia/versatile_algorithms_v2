@@ -1,0 +1,13 @@
+(defun PRINT-ARRAY (matrice)
+    (do ( ( i 0 (+ i 1) ) )
+        ( (= i (CAR (ARRAY-DIMENSIONS matrice)) ) )
+        (do ( ( j 0 (+ j 1) ) )
+            ( (= j (CADR (ARRAY-DIMENSIONS matrice))))
+            ( princ (aref matrice i j) )
+            (princ  '| |) 
+        )
+         
+        (terpri)
+        )
+    )
+)
